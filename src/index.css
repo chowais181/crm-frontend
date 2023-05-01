@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url(./assets/font/Gilroy-Light.ttf);
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url(./assets/font/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url(./assets/font/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "LEMONMILK-Regular";
+  src: url(./assets/font/LEMONMILK-Regular.otf);
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fbf8f3 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #76b598;
+}

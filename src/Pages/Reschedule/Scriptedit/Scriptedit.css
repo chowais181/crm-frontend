@@ -1,0 +1,11 @@
+.codex-editor:nth-child(2) {
+    display: none;
+}
+.codex-editor__redactor {
+    padding-bottom: 0 !important;
+    padding-top: 0px;
+}
+.cdx-marker {
+    background: rgb(245 227 2 / 29%) !important;
+    padding: 3px 0;
+}
