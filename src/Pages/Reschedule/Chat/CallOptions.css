@@ -1,0 +1,37 @@
+.call-end-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 10px;
+}
+
+.call-active-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.video-call-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.calloptions-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

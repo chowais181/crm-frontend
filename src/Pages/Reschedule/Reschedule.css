@@ -1,3 +1,16 @@
+.img-tab-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 13px;
+  overflow-y: auto;
+  height: 120px;
+}
+
+.call-options {
+  margin-top: 25px;
+  margin-left: 35px;
+}
 .main-div {
   padding: 5px 0;
 }
@@ -86,6 +99,7 @@
   align-items: flex-start;
   font-size: 14px;
 }
+
 .contact-number {
   width: 100%;
   margin: 0;
@@ -761,6 +775,7 @@
     display: flex;
     align-items: center;
   }
+
   .feedback-title {
     margin-left: 0;
   }
@@ -811,6 +826,9 @@
   }
 
   .text-title-h1 {
+    padding-left: 0px;
+  }
+  .call-options {
     padding-left: 0px;
   }
   .email-text {

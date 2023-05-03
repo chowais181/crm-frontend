@@ -1,12 +1,14 @@
 import React, { useState } from "react";
+import { Icon } from "@iconify/react";
 import "./Reschedule.css";
 import "../../index.css";
 import SaveIcon from "../../assets/img/save-icon.webp";
 import EditIcon from "../../assets/img/edit-icon.webp";
 import { Col, Container, Form, Row, Toast, Button } from "react-bootstrap";
 import "bootstrap/dist/js/bootstrap.min.js";
-import EdiText from "react-editext";
 import Scriptedit from "./Scriptedit/Scriptedit";
+import CallOptions from "./Chat/CallOptions";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const list = [
   {
@@ -88,6 +90,12 @@ function getHighlightedText(text, higlight) {
 }
 
 const Reschedule = () => {
+  // Tool tip with user name
+  const renderTooltip = (props) => (
+    <Tooltip id="icon-tooltip" {...props}>
+      Date: 03/05/2023 <br /> Time: 05:00 pm
+    </Tooltip>
+  );
   // To switch the list shown in main card
   const [dragStart, setDragStart] = useState(null);
   const [dragOver, setDragOver] = useState(null);
@@ -409,21 +417,47 @@ const Reschedule = () => {
                   imageSlider == true ? "image-menu-show" : "image-menu-hide"
                 } `}
               >
-                <div className="total-call">
-                  <p>Appoitment Set </p>
-                  <span>- 3</span>
-                </div>
-                <div className="total-call">
-                  <p>Total Calls </p>
-                  <span>- 20</span>
-                </div>
-                <div className="total-call">
-                  <p>Follow Up Set</p>
-                  <span>- 30 min</span>
-                </div>
-                <div className="total-call">
-                  <p>Talk Time</p>
-                  <span>- 30 min</span>
+                <div className="img-tab-menu">
+                  <div className="total-call">
+                    <p>Appoitment Set </p>
+                    <span>- 3</span>
+                  </div>
+                  <div className="total-call">
+                    <p>Total Calls </p>
+                    <span>- 20</span>
+                  </div>
+                  <div className="total-call">
+                    <p>Follow Up Set</p>
+                    <span>- 30 min</span>
+                  </div>
+                  <div className="total-call">
+                    <p>Talk Time</p>
+                    <span>- 30 min</span>
+                  </div>
+                  <div className="total-call">
+                    <p>Talk Time</p>
+                    <span>- 20 min</span>
+                  </div>
+                  <div className="total-call">
+                    <p>Talk Time</p>
+                    <span>- 10 min</span>
+                  </div>
+                  <div className="total-call">
+                    <p>Talk Time</p>
+                    <span>- 5 min</span>
+                  </div>
+                  <div className="total-call">
+                    <p>Talk Time</p>
+                    <span>- 54 min</span>
+                  </div>
+                  <div className="total-call">
+                    <p>Talk Time</p>
+                    <span>- 4 min</span>
+                  </div>
+                  <div className="total-call">
+                    <p>Qualified</p>
+                    <span>- 9 min</span>
+                  </div>
                 </div>
               </div>
               <div className="appoinment-img">
@@ -453,7 +487,31 @@ const Reschedule = () => {
                 </svg>
               </div>
               <div className="name-title">
-                <h1 className="user-name">William James</h1>
+                <h1 className="user-name">
+                  <span className="user-name-icon">
+                    <Icon
+                      icon="material-symbols:edit-note-rounded"
+                      color="blue"
+                      width="35"
+                      height="35"
+                    />
+                  </span>
+                  <span>William James</span>
+                  <span className="user-name-icon">
+                    <OverlayTrigger
+                      placement="bottom"
+                      delay={{ show: 250, hide: 400 }}
+                      overlay={renderTooltip}
+                    >
+                      <Icon
+                        icon="icon-park:appointment"
+                        color="black"
+                        width="35"
+                        height="35"
+                      />
+                    </OverlayTrigger>
+                  </span>
+                </h1>
                 <p className="address">
                   <span>
                     <svg
@@ -505,6 +563,7 @@ const Reschedule = () => {
                   james.william@gmail.com
                 </p>
               </div>
+
               <div className="name-title appoinment-tabdiv">
                 <h1 className="text-title-h1">
                   Stage
@@ -542,7 +601,11 @@ const Reschedule = () => {
                                     <img src={Logo} alt="Logo" />
                                 </div>
                             </div> */}
+                <div className="call-options">
+                  <CallOptions />
+                </div>
               </div>
+
               <div
                 className={`tab-menu ${
                   slider == true ? "tab-menu-show" : "tab-menu-hide"
