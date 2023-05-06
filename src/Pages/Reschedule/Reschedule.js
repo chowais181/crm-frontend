@@ -381,7 +381,7 @@ const Reschedule = () => {
     <div>
       <div className="title-text">
         <Container className="header-flex">
-          <h1>Reschedule Appointment</h1>
+          <h1>{""}</h1>
           <div className="appoinment-div appoinment-deson">
             <div
               className={`expand-image ${
@@ -569,38 +569,7 @@ const Reschedule = () => {
                   Stage
                   <br /> COLD IN
                 </h1>
-                {/* <div className='appoinment-div appoinment-tabon'>
-                                <>
-                                    <Button
-                                        onClick={() => setOpen(!open)}
-                                        aria-controls="example-fade-text"
-                                        aria-expanded={open}
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                                            <path d="M0 0h24v24H0V0z" fill="none" />
-                                            <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z" />
-                                        </svg>
-                                    </Button>
-                                    <Fade in={open}>
-                                        <div id="example-fade-text">
-                                            <div className='appoinment-text'>
-                                                <div className='total-call'>
-                                                    <p>Total Calls</p><span>- 20</span>
-                                                </div>
-                                                <div className='total-call'>
-                                                    <p>Talk Time</p><span>- 30min</span>
-                                                </div>
-                                                <div className='total-call'>
-                                                    <p>Appoinment</p><span>- 2</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Fade>
-                                </>
-                                <div className='appoinment-img'>
-                                    <img src={Logo} alt="Logo" />
-                                </div>
-                            </div> */}
+
                 <div className="call-options">
                   <CallOptions />
                 </div>
